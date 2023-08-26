@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const quizSchema = new mongoose.Schema({
+const questionSchema = new mongoose.Schema({
     question: {
         type: String,
         required: true,
@@ -10,10 +10,13 @@ const quizSchema = new mongoose.Schema({
         required: true,
     },
     option: {
-        type: String,
+        type: Array,
         required: true
     },
     
 })
 
-const ques = mongoose.model("User", quizSchema);
+const Question = mongoose.model("Question", questionSchema);
+
+
+export default Question;                                      

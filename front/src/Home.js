@@ -1,5 +1,5 @@
 import React from 'react'
-import Loginn from './Loginn'
+// import Loginn from './Loginn'
 import Registerr from './Registerr'
 function Home() {
   return (
